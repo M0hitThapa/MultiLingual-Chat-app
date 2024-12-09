@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast"
 
 
 
+
 import { Routes, Route, Navigate } from "react-router-dom"
 import { useEffect } from "react"
 
@@ -32,7 +33,7 @@ if(isCheckingAuth && !authUser) return(
 )
   return (
     <>
-    <div className="bg-gradient-to-r from-teal-100 to-rose-100 bg-opacity-50">
+    <div className="bg-slate-200">
     
       <Navbar />
       
