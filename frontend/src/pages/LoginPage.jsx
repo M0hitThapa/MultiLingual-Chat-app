@@ -25,8 +25,8 @@ const LoginPage = () => {
           <div className="flex flex-col items-center gap-2 group">
             <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center grou[-hover:bg-primary/20 transition-colors">
             <img src={Smile} alt="Logo" className="rounded-md size-17 text-primary" /></div>
-            <h1 className="text-3xl font-black  text-teal-800 font-sans drop-shadow-lg">Link Up</h1>
-            <h2 className="text-3xl font-bold mt-1 font-sans drop-shadow-lg  ">Create Account</h2>
+            <h1 className="text-3xl font-black  text-teal-700 font-sans drop-shadow-lg">Link Up</h1>
+            <h2 className="text-3xl font-bold text-slate-200 mt-1 font-sans drop-shadow-lg  ">Create Account</h2>
             <p className="text-rose-700 text-xl font-semibold ">Chat, connect, and be heard.</p>
           </div>
         </div>
@@ -35,7 +35,7 @@ const LoginPage = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
           <div className="form-control">
               <label className="label">
-                <span className="label-text font-bold">Email</span>
+                <span className="label-text text-slate-200 font-bold">Email</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -50,7 +50,7 @@ const LoginPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text  font-bold">Password</span>
+                <span className="label-text  font-bold text-slate-200">Password</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -82,9 +82,9 @@ const LoginPage = () => {
           </form>
 
           <div className="text-center">
-            <p className="text-lg font-medium">
+            <p className="text-lg font-medium text-slate-200">
               Don&apos;t have an account?{" "}
-              <Link to="/signup" className="link link-primary">
+              <Link to="/signup" className="link text-purple-500">
                 Create account
               </Link>
             </p>

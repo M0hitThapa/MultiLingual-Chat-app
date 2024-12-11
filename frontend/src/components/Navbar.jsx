@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="bg-slate-200 shadow-lg border-b border-base-300 fixed w-full top-0 z-40 
+      className="bg-zinc-900  shadow-black shadow-md fixed w-full top-0 z-40 
     backdrop-blur-lg bg-base-100/80"
     >
       <div className="container mx-auto px-4 h-16">
@@ -34,7 +34,7 @@ const Navbar = () => {
                   <span className="hidden sm:inline text-lg">Profile</span>
                 </Link>
 
-                <button className="flex gap-2 items-center text-xl font-black  text-teal-700 font-mono drop-shadow-lg" onClick={logout}>
+                <button className="flex gap-2 items-center text-xl font-black  text-teal-600 font-mono drop-shadow-lg" onClick={logout}>
                   <LogOut className="size-6" />
                   <span className="hidden sm:inline">Logout</span>
                 </button>

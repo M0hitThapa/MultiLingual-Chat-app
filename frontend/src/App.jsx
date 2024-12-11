@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar"
 import SignUpPage from "./pages/SignUpPage"
 import HomePage from "./pages/HomePage"
 import LoginPage from "./pages/LoginPage"
-import SettingPage from "./pages/SettingPage"
 import ProfilePage from "./pages/ProfilePage"
 import { useAuthStore } from "./store/useAuthStore"
 import {Loader} from "lucide-react"
@@ -33,7 +32,7 @@ if(isCheckingAuth && !authUser) return(
 )
   return (
     <>
-    <div className="bg-slate-200">
+    <div className="bg-zinc-900">
     
       <Navbar />
       
@@ -41,7 +40,7 @@ if(isCheckingAuth && !authUser) return(
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />}/>
         <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to="/" />}/>
         <Route path="/login" element={!authUser ? <LoginPage /> : <Navigate to="/" />}/>
-        <Route path="/setting" element={<SettingPage />}/>
+        
         <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />}/>
       </Routes>
       <Toaster />

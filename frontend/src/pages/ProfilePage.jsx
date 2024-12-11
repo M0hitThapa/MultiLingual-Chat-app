@@ -21,9 +21,9 @@ reader.onload = async () => {
 }
   };
   return (
-    <div className="h-screen pt-20">
-      <div className="max-w-2xl mx-auto p-4 py-8">
-        <div className="bg-teal-800 rounded-2xl  p-6 space-y-8 ">
+    <div className="h-screen pt-20 ">
+      
+        <div className="bg-gradient-to-r from-black to-teal-950 rounded-2xl max-w-2xl mx-auto p-12 space-y-8 shadow-black shadow-xl">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-white text-opacity-80">Profile</h1>
             <p className="mt-2 text-white text-opacity-80 font-semibold text-xl">Your Profile information</p>
@@ -60,7 +60,7 @@ reader.onload = async () => {
                 <User className="w-5 h-5" />
                 Full Name
               </div>
-              <p className="px-4 py-2.5 bg-rose-100 rounded-lg border">{authUser?.fullName}</p>
+              <p className="px-4 py-2.5 text-white bg-black/30 rounded-lg border border-black/50">{authUser?.fullName}</p>
             </div>
 
             <div className="space-y-1.5">
@@ -68,26 +68,26 @@ reader.onload = async () => {
                 <Mail className="w-5 h-5" />
                 Email Address
               </div>
-              <p className="px-4 py-2.5 bg-rose-100 rounded-lg border">{authUser?.email}</p>
+              <p className="px-4 py-2.5 text-white bg-black/30 rounded-lg border border-black/50">{authUser?.email}</p>
             </div>
           </div>
 
-          <div className="mt-6 bg-rose-100 rounded-xl p-6">
-            <h2 className="text-xl font-bold">Account Information</h2>
+          <div className="mt-6 bg-black/30 rounded-xl p-6">
+            <h2 className="text-xl font-bold text-white">Account Information</h2>
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between py-2 border-b-4 border-teal-800 ">
-                <span className="text-lg">Member Since</span>
-                <span className="text-lg">{authUser.createdAt?.split("T")[0]}</span>
+                <span className="text-lg text-white">Member Since</span>
+                <span className="text-lg text-white">{authUser.createdAt?.split("T")[0]}</span>
               </div>
               <div className="flex items-center justify-between py-2">
-                <span className="text-lg">Account Status</span>
+                <span className="text-lg text-white">Account Status</span>
                 <span className="text-green-600 text-lg">Active</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  
   )
 }
 

@@ -40,8 +40,8 @@ const SignUpPage = () => {
             <div className="flex flex-col items-center gap-2 group">
               <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center grou[-hover:bg-primary/20 transition-colors">
               <img src={Smile} alt="Logo" className="rounded-md size-17 text-primary" /></div>
-              <h1 className="text-3xl font-black  text-teal-800 font-sans drop-shadow-lg">Link Up</h1>
-              <h2 className="text-3xl font-bold mt-1 font-sans drop-shadow-lg  ">Create Account</h2>
+              <h1 className="text-3xl font-black  text-teal-700 font-sans drop-shadow-lg">Link Up</h1>
+              <h2 className="text-3xl text-slate-200 font-bold mt-1 font-sans drop-shadow-lg  ">Create Account</h2>
               <p className="text-rose-700 text-xl font-semibold ">Chat, connect, and be heard.</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const SignUpPage = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-bold">Full Name</span>
+                <span className="label-text font-bold text-slate-200">Full Name</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -66,7 +66,7 @@ const SignUpPage = () => {
 
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-bold">Email</span>
+                <span className="label-text font-bold text-slate-200">Email</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -81,7 +81,7 @@ const SignUpPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text  font-bold">Password</span>
+                <span className="label-text  font-bold text-slate-200">Password</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -112,9 +112,9 @@ const SignUpPage = () => {
             </button>
           </form>
           <div className="text-center">
-            <p className="text-lg font-medium">
+            <p className="text-lg font-medium text-slate-200">
               Already have an account?{" "}
-              <Link to="/login" className="link link-primary">
+              <Link to="/login" className="link text-purple-500">
                 Sign in
               </Link>
             </p>

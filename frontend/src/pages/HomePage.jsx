@@ -1,9 +1,24 @@
+import { useChatStore } from "../store/useChatStore";
 
+import Sidebar from "../components/Sidebar";
+import NoChatSelected from "../components/NoChatSelected";
+import ChatContainer from "../components/ChatContainer";
 
 const HomePage = () => {
-  return (
-    <div>HomePage</div>
-  )
-}
+  const { selectedUser } = useChatStore();
 
-export default HomePage
+  return (
+
+      <div className="flex mt-16 ">
+        <div className="bg-base-100 rounded-lg shadow-cl w-full   h-[calc(100vh-4rem)]">
+          <div className="flex h-full rounded-lg overflow-hidden">
+            <Sidebar />
+
+            {!selectedUser ? <NoChatSelected /> : <ChatContainer />}
+          </div>
+        </div>
+      </div>
+ 
+  );
+};
+export default HomePage;
