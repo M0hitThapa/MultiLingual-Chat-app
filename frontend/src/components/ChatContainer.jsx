@@ -36,13 +36,13 @@ const ChatContainer = () => {
             <div className="chat-header mb-1">
                 <time className="text-xs text-slate-200 ml-1">{formatMessageTime(message.createdAt)}</time>
             </div>
-            <div className="p-3 bg-teal-800 text-slate-200 rounded-xl flex flex-col">
+            <div className="  text-slate-200 rounded-xl flex flex-col">
                 {message.image && (
                     <img src={message.image}
                     alt="Attachment"
                     className="sm:max-w-[200px] rounded-md mb-2" />
                 )}
-                {message.text && <p>{message.text}</p>}
+                {message.text && <p className="bg-teal-800  p-3 rounded-xl">{message.text}</p>}
             </div>
 
         </div>
