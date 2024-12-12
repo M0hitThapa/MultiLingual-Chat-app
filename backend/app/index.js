@@ -7,8 +7,9 @@ import cors from "cors";
 
 import authRoutes from "./routes/auth.js";
 import messageRoutes from "./routes/message.js"
+import { app, server} from "./lib/socket.js";
 dotenv.config()
-const app = express();
+
 const PORT = process.env.PORT
 app.use(cookieParser())
 app.use(cors({
@@ -22,7 +23,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
 console.log("Go To" + PORT + "port, It's Running There")
 connectDB();
 }) ;

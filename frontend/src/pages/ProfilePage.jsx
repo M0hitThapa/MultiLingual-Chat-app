@@ -23,7 +23,7 @@ reader.onload = async () => {
   return (
     <div className="h-screen pt-20 ">
       
-        <div className="bg-gradient-to-r from-black to-teal-950 rounded-2xl max-w-2xl mx-auto p-12 space-y-8 shadow-black shadow-xl">
+        <div className="bg-gradient-to-r from-black to-teal-950 rounded-2xl max-w-xl mx-auto p-12 space-y-8 shadow-black shadow-xl">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-white text-opacity-80">Profile</h1>
             <p className="mt-2 text-white text-opacity-80 font-semibold text-xl">Your Profile information</p>

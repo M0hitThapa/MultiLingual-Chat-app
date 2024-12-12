@@ -17,7 +17,8 @@ import { useEffect } from "react"
 
 
 const App = () => {
-const {authUser, checkAuth, isCheckingAuth} = useAuthStore();
+const {authUser, checkAuth, isCheckingAuth, onlineUsers} = useAuthStore();
+console.log(onlineUsers);
 
 useEffect(() => {
   checkAuth();
