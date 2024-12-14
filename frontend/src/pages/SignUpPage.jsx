@@ -56,7 +56,7 @@ const SignUpPage = () => {
                   <User className="size-5 text-base-content/40"/>
                 </div>
                 <input type="text"
-                className={`input input-bordered w-full pl-10 bg-rose-50 `}
+                className={`input input-bordered w-full pl-10 bg-zinc-900 `}
                 placeholder="I need Your Name"
                 value={formData.fullName}
                 onChange={(e) => setFormData({ ...formData, fullName: e.target.value})} />
@@ -66,14 +66,14 @@ const SignUpPage = () => {
 
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-bold text-slate-200">Email</span>
+                <span className="label-text font-bold text-slate-200 ">Email</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Mail className="size-5 text-base-content/40"/>
                 </div>
                 <input type="text"
-                className={`input input-bordered w-full pl-10 bg-rose-50 `}
+                className={`input input-bordered w-full pl-10 bg-zinc-900 `}
                 placeholder="Enter Your Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value})} />
@@ -87,7 +87,7 @@ const SignUpPage = () => {
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Lock className="size-5 text-base-content/40" />
                 </div>
-                <input type={showPassword ? "text" : "password"} className={`input input-bordered w-full bg-rose-50 pl-10`} placeholder="Enter Your Password" value={formData.password} 
+                <input type={showPassword ? "text" : "password"} className={`input input-bordered w-full bg-zinc-900 pl-10`} placeholder="Enter Your Password" value={formData.password} 
                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}  />
                 <button type="button" className="absolute inset-y-0 right-0 pr-3 flex items-center" onClick={() => setShowPassword(!showPassword)}>
                   {showPassword ? (

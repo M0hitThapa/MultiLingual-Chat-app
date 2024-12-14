@@ -1,4 +1,4 @@
-import {  HandMetal } from "lucide-react";
+
 
 const NoChatSelected = () => {
   return (
@@ -11,7 +11,7 @@ const NoChatSelected = () => {
               className="w-16 h-16  bg-none flex items-center
              justify-center animate-bounce"
             >
-              <HandMetal className="size-12 text-teal-800 " />
+              
             </div>
           </div>
         </div>
