@@ -39,10 +39,10 @@ const LoginPage = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Mail className="size-5 text-base-content/40"/>
+                  <Mail className="size-5 text-slate-100 text-base-content/40"/>
                 </div>
                 <input type="text"
-                className={`input input-bordered w-full pl-10 bg-zinc-900 `}
+                className={`input input-bordered w-full pl-10 text-white bg-zinc-800 `}
                 placeholder="Enter Your Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value})} />
@@ -54,9 +54,9 @@ const LoginPage = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="size-5 text-base-content/40" />
+                  <Lock className="size-5 text-slate-100 text-base-content/40" />
                 </div>
-                <input type={showPassword ? "text" : "password"} className={`input input-bordered w-full bg-zinc-900 pl-10`} placeholder="Enter Your Password" value={formData.password} 
+                <input type={showPassword ? "text" : "password"} className={`input input-bordered w-full text-white bg-zinc-800 pl-10`} placeholder="Enter Your Password" value={formData.password} 
                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}  />
                 <button type="button" className="absolute inset-y-0 right-0 pr-3 flex items-center" onClick={() => setShowPassword(!showPassword)}>
                   {showPassword ? (
